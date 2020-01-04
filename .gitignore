@@ -9,3 +9,10 @@ OpenGL/Debug/OpenGL.pdb
 OpenGL/Debug/OpenGL.pdb
 OpenGL/Debug/OpenGL.pdb
 OpenGL/.vs/OpenGL/v16/.suo
+OpenGL/.vs/OpenGL/v16/.suo
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.idb
+*.pdb
