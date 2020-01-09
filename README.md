@@ -1,6 +1,6 @@
 # OpenGL-Boilerplate
 
-Boilerplate code for developing 32-bit graphical projects in Windows. Utilizes the GLEW API to create a context for the OpenGL API. This code was developed by following "The Cherno's" OpenGL tutorial series on YouTube, which can be found here: 
+OpenGL Boilerplate project-template used for creating C++ graphical applications for 32-bit Windows. Utilizes the GLEW API to create a context for the OpenGL API. This code was developed by following "The Cherno's" OpenGL tutorial series on YouTube, which can be found here: 
 
 https://www.youtube.com/user/TheChernoProject
 
