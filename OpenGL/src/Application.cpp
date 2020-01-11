@@ -39,8 +39,8 @@ int main(void)
         };
 
         unsigned int indicies[] = {
-               0, 1, 2,
-               2, 3, 0
+            0, 1, 2,
+            2, 3, 0
         };
 
         GLCall(glEnable(GL_BLEND));
@@ -56,8 +56,16 @@ int main(void)
 
         IndexBuffer ib(indicies, 6);
 
+        glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+        glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(-0.5, 0, 0));
+        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.5, 0.5, 0));
+
+        glm::mat4 mvp = proj * view * model;
+
         Shader shader("res/shaders/Basic.shader");
         shader.Bind();
+
+        shader.SetUniformMat4f("u_MVP", mvp);
 
         Texture texture("res/textures/wood.jpg");
         texture.Bind();
