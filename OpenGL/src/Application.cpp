@@ -13,7 +13,7 @@ int main(void)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "OpenGL Boilerplate", NULL, NULL);
+    window = glfwCreateWindow(1280, 960, "OpenGL Boilerplate", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
