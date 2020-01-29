@@ -1,4 +1,5 @@
 #include "Application.h"
+#include <tests\TestCube.h>
 
 int main(void)
 {
@@ -44,6 +45,7 @@ int main(void)
 
         testMenu->RegisterTest<test::TestClearColor>("Clear Color");
         testMenu->RegisterTest<test::TestTexture2D>("Texture 2D");
+        testMenu->RegisterTest<test::TestCube>("Cube");
 
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
